@@ -1,0 +1,35 @@
+{
+  "update_url": "http://clients2.google.com/service/update2/crx",
+  "manifest_version": 3,
+  "name": "Auto Scroll Down",
+  "version": "0.0.1",
+  "description": "Customizable auto scroll web pages",
+  "icons": {
+    "48": "icons/autoscroll.png",
+    "128": "icons/autoscroll.png"
+  },
+  "background": {
+    "service_worker": "js/service_worker.js",
+    "type": "module"
+  },
+  "action": {
+    "default_icon": {
+      "48": "icons/autoscroll.png",
+      "128": "icons/autoscroll.png"
+    }
+  },
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "storage"
+  ],
+  "commands": {
+    "_execute_action": {
+      "suggested_key": {
+        "default": "Ctrl+B",
+        "mac": "Command+B"
+      }
+    }
+  },
+  "options_page": "options/options.html"
+}

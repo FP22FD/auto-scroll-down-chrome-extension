@@ -1,0 +1,38 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  /* background-color: yellow; */
+  font-size: 24px;
+}
+
+table tr td {
+  padding: 16px;
+}
+
+input {
+  font-size: 24px;
+}
+button {
+  font-size: 24px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  align-self: center;
+
+  border: 0;
+  background-color: #eee;
+  text-transform: uppercase;
+  white-space: nowrap;
+  padding: 16px;
+  border-radius: 32px;
+  box-shadow: 4px 4px 4px var(--shadow-box);
+}
+
+button:hover {
+  background-color: #ddd;
+}
