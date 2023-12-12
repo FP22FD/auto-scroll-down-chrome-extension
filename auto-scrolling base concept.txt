@@ -1,0 +1,3 @@
+var run = setInterval(function () { document.documentElement.scrollTop+=10; }, 1000);
+
+clearInterval(run);
